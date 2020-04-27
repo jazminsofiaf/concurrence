@@ -1,0 +1,4 @@
+/Users/Jazmina/Documents/FIUBA/concurrentes/practica/02.Memoria_Compartida/build/CMakeFiles/rebuild_cache.dir
+/Users/Jazmina/Documents/FIUBA/concurrentes/practica/02.Memoria_Compartida/build/CMakeFiles/edit_cache.dir
+/Users/Jazmina/Documents/FIUBA/concurrentes/practica/02.Memoria_Compartida/build/CMakeFiles/ejemplo2.dir
+/Users/Jazmina/Documents/FIUBA/concurrentes/practica/02.Memoria_Compartida/build/CMakeFiles/ejemplo1.dir

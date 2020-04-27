@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++   -Wall -DEJEMPLO_1 -Wall -DEJEMPLO_2 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/ejemplo1.dir/main1.cc.o  -o ejemplo1 

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/Jazmina/Documents/FIUBA/concurrentes/practica/02.Memoria_Compartida/MemoriaCompartida.h
+/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejemplosCpp/02.Memoria_Compartida/MemoriaCompartida.h
 sys/types.h
 -
 sys/ipc.h
@@ -16,7 +16,7 @@ sys/shm.h
 string
 -
 
-/Users/Jazmina/Documents/FIUBA/concurrentes/practica/02.Memoria_Compartida/main1.cc
+/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejemplosCpp/02.Memoria_Compartida/main1.cc
 iostream
 -
 stdlib.h
@@ -26,5 +26,5 @@ unistd.h
 sys/wait.h
 -
 MemoriaCompartida.h
-/Users/Jazmina/Documents/FIUBA/concurrentes/practica/02.Memoria_Compartida/MemoriaCompartida.h
+/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejemplosCpp/02.Memoria_Compartida/MemoriaCompartida.h
 

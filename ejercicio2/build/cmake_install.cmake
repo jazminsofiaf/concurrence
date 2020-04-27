@@ -1,4 +1,4 @@
-# Install script for directory: /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejemplosCpp/02.Memoria_Compartida
+# Install script for directory: /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicio2
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejemplosCpp/02.Memoria_Compartida/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicio2/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

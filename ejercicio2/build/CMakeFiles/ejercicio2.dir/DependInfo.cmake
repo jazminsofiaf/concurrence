@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejemplosCpp/02.Memoria_Compartida/main1.cc" "/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejemplosCpp/02.Memoria_Compartida/build/CMakeFiles/ejemplo1.dir/main1.cc.o"
+  "/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicio2/main.cc" "/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicio2/build/CMakeFiles/ejercicio2.dir/main.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "Clang")
 

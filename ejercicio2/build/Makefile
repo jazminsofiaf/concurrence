@@ -68,10 +68,10 @@ RM = /usr/local/Cellar/cmake/3.17.1/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejemplosCpp/02.Memoria_Compartida
+CMAKE_SOURCE_DIR = /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicio2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejemplosCpp/02.Memoria_Compartida/build
+CMAKE_BINARY_DIR = /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicio2/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejemplosCpp/02.Memoria_Compartida/build/CMakeFiles /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejemplosCpp/02.Memoria_Compartida/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicio2/build/CMakeFiles /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicio2/build/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejemplosCpp/02.Memoria_Compartida/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicio2/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -131,84 +131,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named ejemplo2
+# Target rules for targets named ejercicio2
 
 # Build rule for target.
-ejemplo2: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ejemplo2
-.PHONY : ejemplo2
+ejercicio2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ejercicio2
+.PHONY : ejercicio2
 
 # fast build rule for target.
-ejemplo2/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ejemplo2.dir/build.make CMakeFiles/ejemplo2.dir/build
-.PHONY : ejemplo2/fast
+ejercicio2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ejercicio2.dir/build.make CMakeFiles/ejercicio2.dir/build
+.PHONY : ejercicio2/fast
 
-#=============================================================================
-# Target rules for targets named ejemplo1
+main.o: main.cc.o
 
-# Build rule for target.
-ejemplo1: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ejemplo1
-.PHONY : ejemplo1
-
-# fast build rule for target.
-ejemplo1/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ejemplo1.dir/build.make CMakeFiles/ejemplo1.dir/build
-.PHONY : ejemplo1/fast
-
-main1.o: main1.cc.o
-
-.PHONY : main1.o
+.PHONY : main.o
 
 # target to build an object file
-main1.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ejemplo1.dir/build.make CMakeFiles/ejemplo1.dir/main1.cc.o
-.PHONY : main1.cc.o
+main.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ejercicio2.dir/build.make CMakeFiles/ejercicio2.dir/main.cc.o
+.PHONY : main.cc.o
 
-main1.i: main1.cc.i
+main.i: main.cc.i
 
-.PHONY : main1.i
-
-# target to preprocess a source file
-main1.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ejemplo1.dir/build.make CMakeFiles/ejemplo1.dir/main1.cc.i
-.PHONY : main1.cc.i
-
-main1.s: main1.cc.s
-
-.PHONY : main1.s
-
-# target to generate assembly for a file
-main1.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ejemplo1.dir/build.make CMakeFiles/ejemplo1.dir/main1.cc.s
-.PHONY : main1.cc.s
-
-main2.o: main2.cc.o
-
-.PHONY : main2.o
-
-# target to build an object file
-main2.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ejemplo2.dir/build.make CMakeFiles/ejemplo2.dir/main2.cc.o
-.PHONY : main2.cc.o
-
-main2.i: main2.cc.i
-
-.PHONY : main2.i
+.PHONY : main.i
 
 # target to preprocess a source file
-main2.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ejemplo2.dir/build.make CMakeFiles/ejemplo2.dir/main2.cc.i
-.PHONY : main2.cc.i
+main.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ejercicio2.dir/build.make CMakeFiles/ejercicio2.dir/main.cc.i
+.PHONY : main.cc.i
 
-main2.s: main2.cc.s
+main.s: main.cc.s
 
-.PHONY : main2.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-main2.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ejemplo2.dir/build.make CMakeFiles/ejemplo2.dir/main2.cc.s
-.PHONY : main2.cc.s
+main.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ejercicio2.dir/build.make CMakeFiles/ejercicio2.dir/main.cc.s
+.PHONY : main.cc.s
 
 # Help Target
 help:
@@ -218,14 +178,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... ejemplo1"
-	@echo "... ejemplo2"
-	@echo "... main1.o"
-	@echo "... main1.i"
-	@echo "... main1.s"
-	@echo "... main2.o"
-	@echo "... main2.i"
-	@echo "... main2.s"
+	@echo "... ejercicio2"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

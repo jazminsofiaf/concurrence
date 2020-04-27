@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/Jazmina/Documents/FIUBA/concurrentes/practica/02.Memoria_Compartida/MemoriaCompartida2.h
+/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejemplosCpp/02.Memoria_Compartida/MemoriaCompartida2.h
 sys/types.h
 -
 sys/ipc.h
@@ -22,7 +22,7 @@ iostream
 errno.h
 -
 
-/Users/Jazmina/Documents/FIUBA/concurrentes/practica/02.Memoria_Compartida/main2.cc
+/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejemplosCpp/02.Memoria_Compartida/main2.cc
 sys/wait.h
 -
 unistd.h
@@ -30,5 +30,5 @@ unistd.h
 stdlib.h
 -
 MemoriaCompartida2.h
-/Users/Jazmina/Documents/FIUBA/concurrentes/practica/02.Memoria_Compartida/MemoriaCompartida2.h
+/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejemplosCpp/02.Memoria_Compartida/MemoriaCompartida2.h
 

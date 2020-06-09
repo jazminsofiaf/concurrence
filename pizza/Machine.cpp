@@ -14,7 +14,7 @@ void Machine::initMachine(int amount, Semaforo *semaforo,  int semaforo_id, int 
             }
             cout << "(pid " << getpid() << "): "<< msg << endl;
 
-            this->doTask(buffer);
+            doTask(buffer);
             semaforo->vSignal(semaforo_id);
             semaforo->waitZero(semaforo_id);
         }
@@ -24,11 +24,9 @@ void Machine::initMachine(int amount, Semaforo *semaforo,  int semaforo_id, int 
 }
 
 void Machine::doTask(MemoriaCompartida<char> buffer){
-
-    //Pizza pizza;
-    //pizza.amasadora = 0;
-    //pizza.cortadora =0;
-    //pizza.rallador = 0;
-    buffer.escribir("pizza.serialize()");
-
+    Pizza pizza;
+    pizza.amasadora = 0;
+    pizza.cortadora =0;
+    pizza.rallador = 0;
+    buffer.escribir(pizza.serialize());
 }

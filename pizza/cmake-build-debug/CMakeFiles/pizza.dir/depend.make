@@ -10,6 +10,8 @@ CMakeFiles/pizza.dir/Machine.cpp.o: ../Semaforo.h
 CMakeFiles/pizza.dir/Semaforo.cpp.o: ../Semaforo.cpp
 CMakeFiles/pizza.dir/Semaforo.cpp.o: ../Semaforo.h
 
+CMakeFiles/pizza.dir/main.cc.o: ../Constants.h
+CMakeFiles/pizza.dir/main.cc.o: ../Machine.h
 CMakeFiles/pizza.dir/main.cc.o: ../MemoriaCompartida.h
 CMakeFiles/pizza.dir/main.cc.o: ../Semaforo.h
 CMakeFiles/pizza.dir/main.cc.o: ../main.cc

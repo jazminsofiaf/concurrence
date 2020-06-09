@@ -19,6 +19,8 @@ unistd.h
 -
 sys/wait.h
 -
+sstream
+-
 Semaforo.h
 /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Semaforo.h
 MemoriaCompartida.h
@@ -53,4 +55,20 @@ iostream
 -
 cerrno
 -
+
+/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/main.cc
+iostream
+-
+unistd.h
+-
+stdlib.h
+-
+sys/wait.h
+-
+Semaforo.h
+/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Semaforo.h
+Machine.h
+/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Machine.h
+MemoriaCompartida.h
+/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/MemoriaCompartida.h
 

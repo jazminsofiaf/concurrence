@@ -10,40 +10,16 @@
 #include <iostream>
 #include <unistd.h>
 #include <stdlib.h>
-#include <sstream>
 #include <sys/wait.h>
 
 #include "Semaforo.h"
+#include "Machine.h"
 #include "MemoriaCompartida.h"
-
 
 using namespace std;
 
 int calcularRandom ();
-void initMachine(int amount, Semaforo *semaforo, int semaforo_id , int previous_id, std::string msg);
 int getArgument(int argc, char** argv);
-
-struct Pizza {
-    int amasadora;
-    int cortadora;
-    int rallador;
-    std::string toString(){
-        return  "Pizza { amasado: " + std::to_string(amasadora)
-        +", corte de ingredientes: " + std::to_string(cortadora)
-        +", rallado de muzarella: " + std::to_string(rallador) +" }";
-    }
-    const char * serialize() {
-        std::ostringstream out;
-        out  << amasadora << '|' << cortadora << '|' << rallador;
-        return out.str().c_str();
-    }
-
-    void deserialize(const char * msg){
-        char  pipe1 =0, pipe2 = 0;
-        std::istringstream in(msg);
-        in  >> amasadora >> pipe1 >> cortadora >> pipe2 >> rallador;
-    }
-};
 
 int main (int argc, char** argv) {
     int amount = getArgument(argc, argv);
@@ -56,10 +32,12 @@ int main (int argc, char** argv) {
 
 	Semaforo semaforo(NOMBRE, MACHINES, 0);
 
-
-    initMachine(amount, &semaforo, AMASADOR_ID ,NONE, "Maquina amasadora => termina de amazar la masa de una pizza");
-    initMachine(amount, &semaforo, CORTADORA_ID ,AMASADOR_ID, "Maquina cortadora => termino de cortar los ingredientes y se lo puso a la masa");
-    initMachine(amount, &semaforo, RALLADOR_ID ,CORTADORA_ID, "Maquina ralladora => termino de rallar la muzarella y se lo puso a la masa ");
+    Machine amasador;
+    amasador.initMachine(amount, &semaforo, AMASADOR_ID ,NONE, "Maquina amasadora => termina de amazar la masa de una pizza");
+    Machine cortadora;
+    cortadora.initMachine(amount, &semaforo, CORTADORA_ID ,AMASADOR_ID, "Maquina cortadora => termino de cortar los ingredientes y se lo puso a la masa");
+    Machine rallador;
+    rallador.initMachine(amount, &semaforo, RALLADOR_ID ,CORTADORA_ID, "Maquina ralladora => termino de rallar la muzarella y se lo puso a la masa ");
 
     MemoriaCompartida<char> buffer;
     buffer.crear(SHM, MEM_SIZE);
@@ -106,34 +84,6 @@ int getArgument(int argc, char** argv){
     }
     return 0;
 }
-
-void initMachine(int amount, Semaforo *semaforo,  int semaforo_id, int previous_id, std::string msg){
-    pid_t pid = fork();
-    if ( pid == CHILD_PID ) {
-
-        MemoriaCompartida<char> buffer;
-        buffer.crear(SHM, MEM_SIZE);
-
-        for(int i=0; i < amount; i++ ) {
-            if(previous_id != NONE){
-                semaforo->pWait(previous_id);
-            }
-            cout << "(pid " << getpid() << "): "<< msg << endl;
-
-            Pizza pizza;
-            pizza.amasadora = 0;
-            pizza.cortadora =0;
-            pizza.rallador = 0;
-            buffer.escribir(pizza.serialize());
-
-            semaforo->vSignal(semaforo_id);
-            semaforo->waitZero(semaforo_id);
-        }
-        cout << "(pid " << getpid() << "): termino"<< endl;
-        exit(OK);
-    }
-}
-
 
 
 int calcularRandom () {

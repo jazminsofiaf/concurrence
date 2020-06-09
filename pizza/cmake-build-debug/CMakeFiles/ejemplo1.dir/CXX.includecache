@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/MemoriaCompartida.h
+sys/types.h
+-
+sys/ipc.h
+-
+sys/shm.h
+-
+string
+-
+
+/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Semaforo.cpp
+Semaforo.h
+/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Semaforo.h
+
+/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Semaforo.h
+sys/ipc.h
+-
+sys/sem.h
+-
+sys/types.h
+-
+string
+-
+
+/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/main1.cc
+iostream
+-
+unistd.h
+-
+stdlib.h
+-
+sys/wait.h
+-
+Semaforo.h
+/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Semaforo.h
+MemoriaCompartida.h
+/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/MemoriaCompartida.h
+

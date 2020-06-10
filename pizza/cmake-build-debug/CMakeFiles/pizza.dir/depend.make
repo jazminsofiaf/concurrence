@@ -8,12 +8,23 @@ CMakeFiles/pizza.dir/Amasador.cpp.o: ../Machine.h
 CMakeFiles/pizza.dir/Amasador.cpp.o: ../MemoriaCompartida.h
 CMakeFiles/pizza.dir/Amasador.cpp.o: ../Semaforo.h
 
+CMakeFiles/pizza.dir/Cocinero.cpp.o: ../Cocinero.cpp
+CMakeFiles/pizza.dir/Cocinero.cpp.o: ../Cocinero.h
+CMakeFiles/pizza.dir/Cocinero.cpp.o: ../Constants.h
+CMakeFiles/pizza.dir/Cocinero.cpp.o: ../Horno.h
+CMakeFiles/pizza.dir/Cocinero.cpp.o: ../Machine.h
+CMakeFiles/pizza.dir/Cocinero.cpp.o: ../MemoriaCompartida.h
+CMakeFiles/pizza.dir/Cocinero.cpp.o: ../Semaforo.h
+
 CMakeFiles/pizza.dir/Cortadora.cpp.o: ../Constants.h
 CMakeFiles/pizza.dir/Cortadora.cpp.o: ../Cortadora.cpp
 CMakeFiles/pizza.dir/Cortadora.cpp.o: ../Cortadora.h
 CMakeFiles/pizza.dir/Cortadora.cpp.o: ../Machine.h
 CMakeFiles/pizza.dir/Cortadora.cpp.o: ../MemoriaCompartida.h
 CMakeFiles/pizza.dir/Cortadora.cpp.o: ../Semaforo.h
+
+CMakeFiles/pizza.dir/Horno.cpp.o: ../Horno.cpp
+CMakeFiles/pizza.dir/Horno.cpp.o: ../Horno.h
 
 CMakeFiles/pizza.dir/Machine.cpp.o: ../Constants.h
 CMakeFiles/pizza.dir/Machine.cpp.o: ../Machine.cpp
@@ -32,8 +43,10 @@ CMakeFiles/pizza.dir/Semaforo.cpp.o: ../Semaforo.cpp
 CMakeFiles/pizza.dir/Semaforo.cpp.o: ../Semaforo.h
 
 CMakeFiles/pizza.dir/main.cc.o: ../Amasador.h
+CMakeFiles/pizza.dir/main.cc.o: ../Cocinero.h
 CMakeFiles/pizza.dir/main.cc.o: ../Constants.h
 CMakeFiles/pizza.dir/main.cc.o: ../Cortadora.h
+CMakeFiles/pizza.dir/main.cc.o: ../Horno.h
 CMakeFiles/pizza.dir/main.cc.o: ../Machine.h
 CMakeFiles/pizza.dir/main.cc.o: ../MemoriaCompartida.h
 CMakeFiles/pizza.dir/main.cc.o: ../Rallador.h

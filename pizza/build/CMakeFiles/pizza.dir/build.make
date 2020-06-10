@@ -103,19 +103,79 @@ CMakeFiles/pizza.dir/Semaforo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pizza.dir/Semaforo.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Semaforo.cpp -o CMakeFiles/pizza.dir/Semaforo.cpp.s
 
+CMakeFiles/pizza.dir/Machine.cpp.o: CMakeFiles/pizza.dir/flags.make
+CMakeFiles/pizza.dir/Machine.cpp.o: ../Machine.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/pizza.dir/Machine.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pizza.dir/Machine.cpp.o -c /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Machine.cpp
+
+CMakeFiles/pizza.dir/Machine.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pizza.dir/Machine.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Machine.cpp > CMakeFiles/pizza.dir/Machine.cpp.i
+
+CMakeFiles/pizza.dir/Machine.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pizza.dir/Machine.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Machine.cpp -o CMakeFiles/pizza.dir/Machine.cpp.s
+
+CMakeFiles/pizza.dir/Cortadora.cpp.o: CMakeFiles/pizza.dir/flags.make
+CMakeFiles/pizza.dir/Cortadora.cpp.o: ../Cortadora.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/pizza.dir/Cortadora.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pizza.dir/Cortadora.cpp.o -c /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Cortadora.cpp
+
+CMakeFiles/pizza.dir/Cortadora.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pizza.dir/Cortadora.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Cortadora.cpp > CMakeFiles/pizza.dir/Cortadora.cpp.i
+
+CMakeFiles/pizza.dir/Cortadora.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pizza.dir/Cortadora.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Cortadora.cpp -o CMakeFiles/pizza.dir/Cortadora.cpp.s
+
+CMakeFiles/pizza.dir/Rallador.cpp.o: CMakeFiles/pizza.dir/flags.make
+CMakeFiles/pizza.dir/Rallador.cpp.o: ../Rallador.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/pizza.dir/Rallador.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pizza.dir/Rallador.cpp.o -c /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Rallador.cpp
+
+CMakeFiles/pizza.dir/Rallador.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pizza.dir/Rallador.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Rallador.cpp > CMakeFiles/pizza.dir/Rallador.cpp.i
+
+CMakeFiles/pizza.dir/Rallador.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pizza.dir/Rallador.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Rallador.cpp -o CMakeFiles/pizza.dir/Rallador.cpp.s
+
+CMakeFiles/pizza.dir/Amasador.cpp.o: CMakeFiles/pizza.dir/flags.make
+CMakeFiles/pizza.dir/Amasador.cpp.o: ../Amasador.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/pizza.dir/Amasador.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pizza.dir/Amasador.cpp.o -c /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Amasador.cpp
+
+CMakeFiles/pizza.dir/Amasador.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pizza.dir/Amasador.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Amasador.cpp > CMakeFiles/pizza.dir/Amasador.cpp.i
+
+CMakeFiles/pizza.dir/Amasador.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pizza.dir/Amasador.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Amasador.cpp -o CMakeFiles/pizza.dir/Amasador.cpp.s
+
 # Object files for target pizza
 pizza_OBJECTS = \
 "CMakeFiles/pizza.dir/main.cc.o" \
-"CMakeFiles/pizza.dir/Semaforo.cpp.o"
+"CMakeFiles/pizza.dir/Semaforo.cpp.o" \
+"CMakeFiles/pizza.dir/Machine.cpp.o" \
+"CMakeFiles/pizza.dir/Cortadora.cpp.o" \
+"CMakeFiles/pizza.dir/Rallador.cpp.o" \
+"CMakeFiles/pizza.dir/Amasador.cpp.o"
 
 # External object files for target pizza
 pizza_EXTERNAL_OBJECTS =
 
 pizza: CMakeFiles/pizza.dir/main.cc.o
 pizza: CMakeFiles/pizza.dir/Semaforo.cpp.o
+pizza: CMakeFiles/pizza.dir/Machine.cpp.o
+pizza: CMakeFiles/pizza.dir/Cortadora.cpp.o
+pizza: CMakeFiles/pizza.dir/Rallador.cpp.o
+pizza: CMakeFiles/pizza.dir/Amasador.cpp.o
 pizza: CMakeFiles/pizza.dir/build.make
 pizza: CMakeFiles/pizza.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable pizza"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable pizza"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pizza.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

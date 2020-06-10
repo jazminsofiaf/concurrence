@@ -9,9 +9,12 @@ void Machine::initMachine(int amount, Semaforo *semaforo,  int semaforo_id, int 
         for(int i=0; i < amount; i++ ) {
             if(previous_id != NONE){
                 semaforo->pWait(previous_id);
+                doTask();
+                semaforo->pWait(previous_id);
+            } else {
+                doTask();
             }
-            doTask();
-            semaforo->vSignal(semaforo_id);
+            semaforo->vSignal(semaforo_id,2);
             semaforo->waitZero(semaforo_id);
         }
         cout << "(pid " << getpid() << "): termino"<< endl;
@@ -36,6 +39,7 @@ void Machine::shutDown(){
     if(WIFSIGNALED(status)){//true if child was killed by any signal from other process or same process
         std::cerr << this->pid <<" terminates by signal : " << WTERMSIG(status) << std::endl;
     }
+    delete this;
 }
 
 Machine::~Machine() {}

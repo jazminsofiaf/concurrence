@@ -43,22 +43,30 @@ int Semaforo::waitZero (const int num) const {
     return resultado;
 }
 
-int Semaforo::pWait(const int num) const {
+int Semaforo::pWait(const int id) const {
+    return this->pWait(id, 1);
+}
+
+int Semaforo::pWait(const int id, const int num) const {
 	struct sembuf operacion;
 
-	operacion.sem_num = num;	// numero de semaforo
-	operacion.sem_op  = -1;	// restar 1 al semaforo
+	operacion.sem_num = id;	// numero de semaforo
+	operacion.sem_op  = -num;	// restar 1 al semaforo
 	operacion.sem_flg = SEM_UNDO;
 
 	int resultado = semop ( this->id,&operacion,1 );
 	return resultado;
 }
 
-int Semaforo::vSignal(const int num) const {
+int Semaforo::vSignal(const int id) const {
+    return this->vSignal(id, 1);
+}
+
+int Semaforo::vSignal(const int id, const int num) const {
 	struct sembuf operacion;
 
-	operacion.sem_num = num;	// numero de semaforo
-	operacion.sem_op  = 1;	// sumar 1 al semaforo
+	operacion.sem_num = id;	// numero de semaforo
+	operacion.sem_op  = num;	// sumar 1 al semaforo
 	operacion.sem_flg = SEM_UNDO;
 
 	int resultado = semop ( this->id,&operacion,1 );

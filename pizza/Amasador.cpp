@@ -12,6 +12,9 @@ void Amasador::doTask(){
     prepizza.cortadora = 0;
     prepizza.rallador = 0;
     this->write_buffer.escribir(prepizza.serialize());
-    std::string task_msg = "Maquina amasadora => termina de amazar la masa de ";
+    std::string task_msg = "Maquina amasadora => termina de amasar la masa de ";
     std::cout << "(pid " << getpid() << "): "<< task_msg << prepizza.toString() <<  std::endl;
 }
+
+Amasador::~Amasador(){}
+

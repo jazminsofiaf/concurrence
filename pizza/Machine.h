@@ -6,7 +6,6 @@
 
 #include <iostream>
 #include <unistd.h>
-#include <sys/wait.h>
 #include <sstream>
 
 #include "Semaforo.h"
@@ -26,7 +25,7 @@ protected:
 
 public:
     void shutDown();
-    ~Machine();
+    virtual ~Machine();
 };
 
 struct Pizza {
@@ -36,7 +35,7 @@ struct Pizza {
     std::string toString(){
         return  "Pizza { amasado: " + std::to_string(amasadora)
                 +", corte de ingredientes: " + std::to_string(cortadora)
-                +", rallado de muzarella: " + std::to_string(rallador) +" }";
+                +", rallado de muzzarella: " + std::to_string(rallador) +" }";
     }
     const char * serialize() {
         std::ostringstream out;

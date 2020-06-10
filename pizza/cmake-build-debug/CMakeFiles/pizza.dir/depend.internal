@@ -8,6 +8,14 @@ CMakeFiles/pizza.dir/Amasador.cpp.o
  /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Machine.h
  /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/MemoriaCompartida.h
  /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Semaforo.h
+CMakeFiles/pizza.dir/Cocinero.cpp.o
+ /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Cocinero.cpp
+ /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Cocinero.h
+ /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Constants.h
+ /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Horno.h
+ /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Machine.h
+ /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/MemoriaCompartida.h
+ /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Semaforo.h
 CMakeFiles/pizza.dir/Cortadora.cpp.o
  /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Constants.h
  /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Cortadora.cpp
@@ -15,6 +23,9 @@ CMakeFiles/pizza.dir/Cortadora.cpp.o
  /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Machine.h
  /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/MemoriaCompartida.h
  /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Semaforo.h
+CMakeFiles/pizza.dir/Horno.cpp.o
+ /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Horno.cpp
+ /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Horno.h
 CMakeFiles/pizza.dir/Machine.cpp.o
  /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Constants.h
  /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Machine.cpp
@@ -33,8 +44,10 @@ CMakeFiles/pizza.dir/Semaforo.cpp.o
  /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Semaforo.h
 CMakeFiles/pizza.dir/main.cc.o
  /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Amasador.h
+ /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Cocinero.h
  /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Constants.h
  /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Cortadora.h
+ /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Horno.h
  /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Machine.h
  /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/MemoriaCompartida.h
  /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Rallador.h

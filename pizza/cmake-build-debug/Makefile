@@ -150,6 +150,33 @@ Amasador.cpp.s:
 	$(MAKE) -f CMakeFiles/pizza.dir/build.make CMakeFiles/pizza.dir/Amasador.cpp.s
 .PHONY : Amasador.cpp.s
 
+Cocinero.o: Cocinero.cpp.o
+
+.PHONY : Cocinero.o
+
+# target to build an object file
+Cocinero.cpp.o:
+	$(MAKE) -f CMakeFiles/pizza.dir/build.make CMakeFiles/pizza.dir/Cocinero.cpp.o
+.PHONY : Cocinero.cpp.o
+
+Cocinero.i: Cocinero.cpp.i
+
+.PHONY : Cocinero.i
+
+# target to preprocess a source file
+Cocinero.cpp.i:
+	$(MAKE) -f CMakeFiles/pizza.dir/build.make CMakeFiles/pizza.dir/Cocinero.cpp.i
+.PHONY : Cocinero.cpp.i
+
+Cocinero.s: Cocinero.cpp.s
+
+.PHONY : Cocinero.s
+
+# target to generate assembly for a file
+Cocinero.cpp.s:
+	$(MAKE) -f CMakeFiles/pizza.dir/build.make CMakeFiles/pizza.dir/Cocinero.cpp.s
+.PHONY : Cocinero.cpp.s
+
 Cortadora.o: Cortadora.cpp.o
 
 .PHONY : Cortadora.o
@@ -176,6 +203,33 @@ Cortadora.s: Cortadora.cpp.s
 Cortadora.cpp.s:
 	$(MAKE) -f CMakeFiles/pizza.dir/build.make CMakeFiles/pizza.dir/Cortadora.cpp.s
 .PHONY : Cortadora.cpp.s
+
+Horno.o: Horno.cpp.o
+
+.PHONY : Horno.o
+
+# target to build an object file
+Horno.cpp.o:
+	$(MAKE) -f CMakeFiles/pizza.dir/build.make CMakeFiles/pizza.dir/Horno.cpp.o
+.PHONY : Horno.cpp.o
+
+Horno.i: Horno.cpp.i
+
+.PHONY : Horno.i
+
+# target to preprocess a source file
+Horno.cpp.i:
+	$(MAKE) -f CMakeFiles/pizza.dir/build.make CMakeFiles/pizza.dir/Horno.cpp.i
+.PHONY : Horno.cpp.i
+
+Horno.s: Horno.cpp.s
+
+.PHONY : Horno.s
+
+# target to generate assembly for a file
+Horno.cpp.s:
+	$(MAKE) -f CMakeFiles/pizza.dir/build.make CMakeFiles/pizza.dir/Horno.cpp.s
+.PHONY : Horno.cpp.s
 
 Machine.o: Machine.cpp.o
 
@@ -297,9 +351,15 @@ help:
 	@echo "... Amasador.o"
 	@echo "... Amasador.i"
 	@echo "... Amasador.s"
+	@echo "... Cocinero.o"
+	@echo "... Cocinero.i"
+	@echo "... Cocinero.s"
 	@echo "... Cortadora.o"
 	@echo "... Cortadora.i"
 	@echo "... Cortadora.s"
+	@echo "... Horno.o"
+	@echo "... Horno.i"
+	@echo "... Horno.s"
 	@echo "... Machine.o"
 	@echo "... Machine.i"
 	@echo "... Machine.s"

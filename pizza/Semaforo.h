@@ -22,8 +22,10 @@ public:
 	~Semaforo();
 
     int waitZero (const int num) const; // esperar a que sea cero
-	int pWait (const int num) const; // decrementa
-	int vSignal (const int num) const; // incrementa
+	int pWait (const int id, const int num) const; // decrementa en num
+	int vSignal (const int id, const int num) const; // incrementa en num
+    int pWait (const int id) const; // decrementa
+    int vSignal (const int id) const; // incrementa
 	void eliminar () const;
 
 };

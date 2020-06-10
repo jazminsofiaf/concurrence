@@ -86,6 +86,12 @@
 		<Unit filename="/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Amasador.h">
 			<Option target="pizza"/>
 		</Unit>
+		<Unit filename="/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Cocinero.cpp">
+			<Option target="pizza"/>
+		</Unit>
+		<Unit filename="/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Cocinero.h">
+			<Option target="pizza"/>
+		</Unit>
 		<Unit filename="/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Constants.h">
 			<Option target="pizza"/>
 		</Unit>
@@ -93,6 +99,12 @@
 			<Option target="pizza"/>
 		</Unit>
 		<Unit filename="/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Cortadora.h">
+			<Option target="pizza"/>
+		</Unit>
+		<Unit filename="/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Horno.cpp">
+			<Option target="pizza"/>
+		</Unit>
+		<Unit filename="/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Horno.h">
 			<Option target="pizza"/>
 		</Unit>
 		<Unit filename="/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Machine.cpp">

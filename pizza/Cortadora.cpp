@@ -18,5 +18,6 @@ void Cortadora::doTask(){
     this->write_buffer.escribir(prepizza.serialize());
     msg ="Maquina cortadora => termino de cortar la cebolla y se lo puso a la masa ";
     std::cout << "(pid " << getpid() << "): "<< msg << prepizza.toString() <<std::endl;
-
 }
+
+Cortadora::~Cortadora(){}

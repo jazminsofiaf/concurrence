@@ -8,6 +8,7 @@
 class Rallador : public Machine{
 public:
     Rallador(int amount, Semaforo *semaforo, int semaforo_id, int previous_id);
+    ~Rallador();
 private:
     void doTask() override ;
 };

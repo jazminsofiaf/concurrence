@@ -20,3 +20,5 @@ void Rallador::doTask(){
     std::cout << "(pid " << getpid() << "): "<< msg << prepizza.toString() <<std::endl;
 }
 
+Rallador::~Rallador(){}
+

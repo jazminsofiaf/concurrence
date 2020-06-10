@@ -20,5 +20,9 @@ void Rallador::doTask(){
     std::cout << "(pid " << getpid() << "): "<< msg << prepizza.toString() <<std::endl;
 }
 
-Rallador::~Rallador(){}
+Rallador::~Rallador(){
+    std::cout << "(pid " << getpid() << "): delete rallador" <<std::endl;
+    this->read_buffer.liberar();
+    this->write_buffer.liberar();
+}
 

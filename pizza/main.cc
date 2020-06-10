@@ -17,9 +17,9 @@ int main (int argc, char** argv) {
     static const int AMASADOR_ID = 0;
     static const int CORTADORA_ID = 1;
     static const int RALLADOR_ID = 2;
-    Cocinero cocinero;
 	Semaforo semaforo(NOMBRE, MACHINES, 0);
 
+    Cocinero cocinero;
     Amasador * amasador = new Amasador(amount, &semaforo, AMASADOR_ID);
     Cortadora * cortadora = new Cortadora(amount, &semaforo, CORTADORA_ID ,AMASADOR_ID);
     Rallador * rallador = new Rallador(amount, &semaforo, RALLADOR_ID ,CORTADORA_ID);

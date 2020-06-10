@@ -6,23 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Amasador.cpp
-Amasador.h
-/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Amasador.h
-
-/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Amasador.h
-Machine.h
-/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Machine.h
-
 /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Constants.h
-
-/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Cortadora.cpp
-Cortadora.h
-/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Cortadora.h
-
-/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Cortadora.h
-Machine.h
-/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Machine.h
 
 /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Machine.cpp
 Machine.h
@@ -55,14 +39,6 @@ cerrno
 -
 iostream
 -
-
-/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Rallador.cpp
-Rallador.h
-/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Rallador.h
-
-/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Rallador.h
-Machine.h
-/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Machine.h
 
 /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Semaforo.h
 sys/ipc.h

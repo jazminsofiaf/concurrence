@@ -20,4 +20,8 @@ void Cortadora::doTask(){
     std::cout << "(pid " << getpid() << "): "<< msg << prepizza.toString() <<std::endl;
 }
 
-Cortadora::~Cortadora(){}
+Cortadora::~Cortadora(){
+    std::cout << "(pid " << getpid() << "): delete cortadora" <<std::endl;
+    this->read_buffer.liberar();
+    this->write_buffer.liberar();
+}

@@ -16,5 +16,8 @@ void Amasador::doTask(){
     std::cout << "(pid " << getpid() << "): "<< task_msg << prepizza.toString() <<  std::endl;
 }
 
-Amasador::~Amasador(){}
+Amasador::~Amasador(){
+    std::cout << "(pid " << getpid() << "): delete amasadora" <<std::endl;
+    this->write_buffer.liberar();
+}
 

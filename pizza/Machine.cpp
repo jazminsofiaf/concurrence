@@ -6,6 +6,7 @@ Machine::Machine():num(1){}
 void Machine::initMachine(int amount, Semaforo *semaforo,  int semaforo_id, int previous_id){
     this->pid = fork();
     if ( pid == CHILD_PID ) {
+        static const int SEMAFORO_K_VALUE = 2;
         for(int i=0; i < amount; i++ ) {
             if(previous_id != NONE){
                 semaforo->pWait(previous_id);
@@ -14,7 +15,7 @@ void Machine::initMachine(int amount, Semaforo *semaforo,  int semaforo_id, int 
             } else {
                 doTask();
             }
-            semaforo->vSignal(semaforo_id,2);
+            semaforo->vSignal(semaforo_id,SEMAFORO_K_VALUE);
             semaforo->waitZero(semaforo_id);
         }
         cout << "(pid " << getpid() << "): termino"<< endl;

@@ -32,14 +32,17 @@ int Semaforo :: inicializar () const {
 }
 
 
-int Semaforo::waitZero (const int num) const {
+int Semaforo::waitZero (const int id) const {
     struct sembuf operacion;
 
-    operacion.sem_num = num;	// numero de semaforo
+    operacion.sem_num = id;	// numero de semaforo
     operacion.sem_op  = 0;	// espera hasta que el semaforo sea cero
     operacion.sem_flg = SEM_UNDO;
 
     int resultado = semop (this->id, &operacion, 1);
+    if(resultado == -1){
+        std::cerr << "error en wait 0 en "<< id << std::strerror(errno) <<std::endl;
+    }
     return resultado;
 }
 
@@ -55,6 +58,9 @@ int Semaforo::pWait(const int id, const int num) const {
 	operacion.sem_flg = SEM_UNDO;
 
 	int resultado = semop ( this->id,&operacion,1 );
+    if(resultado == -1){
+        std::cerr << "error en p (wait) "<< id << std::strerror(errno) <<std::endl;
+    }
 	return resultado;
 }
 
@@ -70,6 +76,9 @@ int Semaforo::vSignal(const int id, const int num) const {
 	operacion.sem_flg = SEM_UNDO;
 
 	int resultado = semop ( this->id,&operacion,1 );
+    if(resultado == -1){
+        std::cerr << "error en v (sinal) "<< id << std::strerror(errno) <<std::endl;
+    }
 	return resultado;
 }
 

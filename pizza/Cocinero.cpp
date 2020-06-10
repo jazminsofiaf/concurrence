@@ -29,6 +29,6 @@ void Cocinero::cocinar(int amount, Semaforo *semaforo, const int semaforo_previo
              << " minutos." << endl;
         amount -= pizzas;
     }
-
+    read_buffer.liberar();
 }
 Cocinero::~Cocinero(){}

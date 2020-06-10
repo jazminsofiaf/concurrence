@@ -17,7 +17,6 @@ void Amasador::doTask(){
 }
 
 Amasador::~Amasador(){
-    std::cout << "(pid " << getpid() << "): delete amasadora" <<std::endl;
     this->write_buffer.liberar();
 }
 

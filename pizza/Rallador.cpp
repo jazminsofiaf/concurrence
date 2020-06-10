@@ -21,7 +21,6 @@ void Rallador::doTask(){
 }
 
 Rallador::~Rallador(){
-    std::cout << "(pid " << getpid() << "): delete rallador" <<std::endl;
     this->read_buffer.liberar();
     this->write_buffer.liberar();
 }

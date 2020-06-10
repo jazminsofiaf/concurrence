@@ -123,6 +123,60 @@ pizza/fast:
 	$(MAKE) -f CMakeFiles/pizza.dir/build.make CMakeFiles/pizza.dir/build
 .PHONY : pizza/fast
 
+Amasador.o: Amasador.cpp.o
+
+.PHONY : Amasador.o
+
+# target to build an object file
+Amasador.cpp.o:
+	$(MAKE) -f CMakeFiles/pizza.dir/build.make CMakeFiles/pizza.dir/Amasador.cpp.o
+.PHONY : Amasador.cpp.o
+
+Amasador.i: Amasador.cpp.i
+
+.PHONY : Amasador.i
+
+# target to preprocess a source file
+Amasador.cpp.i:
+	$(MAKE) -f CMakeFiles/pizza.dir/build.make CMakeFiles/pizza.dir/Amasador.cpp.i
+.PHONY : Amasador.cpp.i
+
+Amasador.s: Amasador.cpp.s
+
+.PHONY : Amasador.s
+
+# target to generate assembly for a file
+Amasador.cpp.s:
+	$(MAKE) -f CMakeFiles/pizza.dir/build.make CMakeFiles/pizza.dir/Amasador.cpp.s
+.PHONY : Amasador.cpp.s
+
+Cortadora.o: Cortadora.cpp.o
+
+.PHONY : Cortadora.o
+
+# target to build an object file
+Cortadora.cpp.o:
+	$(MAKE) -f CMakeFiles/pizza.dir/build.make CMakeFiles/pizza.dir/Cortadora.cpp.o
+.PHONY : Cortadora.cpp.o
+
+Cortadora.i: Cortadora.cpp.i
+
+.PHONY : Cortadora.i
+
+# target to preprocess a source file
+Cortadora.cpp.i:
+	$(MAKE) -f CMakeFiles/pizza.dir/build.make CMakeFiles/pizza.dir/Cortadora.cpp.i
+.PHONY : Cortadora.cpp.i
+
+Cortadora.s: Cortadora.cpp.s
+
+.PHONY : Cortadora.s
+
+# target to generate assembly for a file
+Cortadora.cpp.s:
+	$(MAKE) -f CMakeFiles/pizza.dir/build.make CMakeFiles/pizza.dir/Cortadora.cpp.s
+.PHONY : Cortadora.cpp.s
+
 Machine.o: Machine.cpp.o
 
 .PHONY : Machine.o
@@ -149,6 +203,33 @@ Machine.s: Machine.cpp.s
 Machine.cpp.s:
 	$(MAKE) -f CMakeFiles/pizza.dir/build.make CMakeFiles/pizza.dir/Machine.cpp.s
 .PHONY : Machine.cpp.s
+
+Rallador.o: Rallador.cpp.o
+
+.PHONY : Rallador.o
+
+# target to build an object file
+Rallador.cpp.o:
+	$(MAKE) -f CMakeFiles/pizza.dir/build.make CMakeFiles/pizza.dir/Rallador.cpp.o
+.PHONY : Rallador.cpp.o
+
+Rallador.i: Rallador.cpp.i
+
+.PHONY : Rallador.i
+
+# target to preprocess a source file
+Rallador.cpp.i:
+	$(MAKE) -f CMakeFiles/pizza.dir/build.make CMakeFiles/pizza.dir/Rallador.cpp.i
+.PHONY : Rallador.cpp.i
+
+Rallador.s: Rallador.cpp.s
+
+.PHONY : Rallador.s
+
+# target to generate assembly for a file
+Rallador.cpp.s:
+	$(MAKE) -f CMakeFiles/pizza.dir/build.make CMakeFiles/pizza.dir/Rallador.cpp.s
+.PHONY : Rallador.cpp.s
 
 Semaforo.o: Semaforo.cpp.o
 
@@ -213,9 +294,18 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... pizza"
+	@echo "... Amasador.o"
+	@echo "... Amasador.i"
+	@echo "... Amasador.s"
+	@echo "... Cortadora.o"
+	@echo "... Cortadora.i"
+	@echo "... Cortadora.s"
 	@echo "... Machine.o"
 	@echo "... Machine.i"
 	@echo "... Machine.s"
+	@echo "... Rallador.o"
+	@echo "... Rallador.i"
+	@echo "... Rallador.s"
 	@echo "... Semaforo.o"
 	@echo "... Semaforo.i"
 	@echo "... Semaforo.s"

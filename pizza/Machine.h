@@ -14,10 +14,19 @@
 #include "Constants.h"
 
 class Machine {
-public:
-    void initMachine(int amount, Semaforo *semaforo, int semaforo_id , int previous_id, std::string msg);
 private:
-    void doTask(MemoriaCompartida<char> buffer);
+    pid_t pid;
+protected:
+    int num;
+    MemoriaCompartida<char> write_buffer;
+    MemoriaCompartida<char> read_buffer;
+    Machine();
+    void initMachine(int amount, Semaforo *semaforo, int semaforo_id , int previous_id);
+    virtual void doTask() = 0;
+
+public:
+    void shutDown();
+    ~Machine();
 };
 
 struct Pizza {

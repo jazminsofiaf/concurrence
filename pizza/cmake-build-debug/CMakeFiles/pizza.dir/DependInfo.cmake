@@ -4,7 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Amasador.cpp" "/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/cmake-build-debug/CMakeFiles/pizza.dir/Amasador.cpp.o"
+  "/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Cortadora.cpp" "/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/cmake-build-debug/CMakeFiles/pizza.dir/Cortadora.cpp.o"
   "/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Machine.cpp" "/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/cmake-build-debug/CMakeFiles/pizza.dir/Machine.cpp.o"
+  "/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Rallador.cpp" "/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/cmake-build-debug/CMakeFiles/pizza.dir/Rallador.cpp.o"
   "/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Semaforo.cpp" "/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/cmake-build-debug/CMakeFiles/pizza.dir/Semaforo.cpp.o"
   "/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/main.cc" "/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/cmake-build-debug/CMakeFiles/pizza.dir/main.cc.o"
   )

@@ -6,7 +6,23 @@
 
 #IncludeRegexTransform: 
 
+/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Amasador.cpp
+Amasador.h
+/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Amasador.h
+
+/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Amasador.h
+Machine.h
+/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Machine.h
+
 /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Constants.h
+
+/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Cortadora.cpp
+Cortadora.h
+/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Cortadora.h
+
+/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Cortadora.h
+Machine.h
+/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Machine.h
 
 /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Machine.cpp
 Machine.h
@@ -42,6 +58,14 @@ cerrno
 iostream
 -
 
+/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Rallador.cpp
+Rallador.h
+/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Rallador.h
+
+/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Rallador.h
+Machine.h
+/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Machine.h
+
 /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Semaforo.h
 sys/ipc.h
 -
@@ -63,12 +87,16 @@ unistd.h
 -
 stdlib.h
 -
-sys/wait.h
--
 Semaforo.h
 /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Semaforo.h
 Machine.h
 /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Machine.h
 MemoriaCompartida.h
 /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/MemoriaCompartida.h
+Amasador.h
+/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Amasador.h
+Cortadora.h
+/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Cortadora.h
+Rallador.h
+/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Rallador.h
 

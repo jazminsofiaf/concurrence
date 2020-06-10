@@ -1,20 +1,16 @@
 #ifdef PIZZA
 
-#define CHILD_PID 0
-#define OK 0
-#define ARG 1
-#define NONE -1
-#define MEM_SIZE 14
-#define SHM "Semaforo.cpp"
 
 #include <iostream>
 #include <unistd.h>
 #include <stdlib.h>
-#include <sys/wait.h>
 
 #include "Semaforo.h"
 #include "Machine.h"
 #include "MemoriaCompartida.h"
+#include "Amasador.h"
+#include "Cortadora.h"
+#include "Rallador.h"
 
 using namespace std;
 
@@ -32,25 +28,22 @@ int main (int argc, char** argv) {
 
 	Semaforo semaforo(NOMBRE, MACHINES, 0);
 
-    Machine amasador;
-    amasador.initMachine(amount, &semaforo, AMASADOR_ID ,NONE, "Maquina amasadora => termina de amazar la masa de una pizza");
-    Machine cortadora;
-    cortadora.initMachine(amount, &semaforo, CORTADORA_ID ,AMASADOR_ID, "Maquina cortadora => termino de cortar los ingredientes y se lo puso a la masa");
-    Machine rallador;
-    rallador.initMachine(amount, &semaforo, RALLADOR_ID ,CORTADORA_ID, "Maquina ralladora => termino de rallar la muzarella y se lo puso a la masa ");
+    Amasador * amasador = new Amasador(amount, &semaforo, AMASADOR_ID);
+    Cortadora * cortadora = new Cortadora(amount, &semaforo, CORTADORA_ID ,AMASADOR_ID);
+    Rallador * rallador = new Rallador(amount, &semaforo, RALLADOR_ID ,CORTADORA_ID);
 
-    MemoriaCompartida<char> buffer;
-    buffer.crear(SHM, MEM_SIZE);
+    MemoriaCompartida<char> read_buffer;
+    read_buffer.crear(PREPIZZA_CON_CEBOLLA_Y_QUESO, MEM_SIZE);
     while(amount > 0 ) {
         int pizzas = 0;
         while(pizzas < OVEN_LIMIT && pizzas < amount) {
-            semaforo.pWait(2);
+            semaforo.pWait(RALLADOR_ID);
             char pizza_str[MEM_SIZE];
-            buffer.leer(pizza_str);
+            read_buffer.leer(pizza_str);
             Pizza pizza_armada;
             pizza_armada.deserialize(pizza_str);
             cout << "Cocinero => recibe la prepizza armada " << pizza_armada.toString() << endl;
-            cout << "Cocinero => se mete la pizza en el horno" << endl;
+            cout << "Cocinero => mete la pizza en el horno" << endl;
             pizzas ++;
         }
         cout << "Cocinero => se enciende el horno a 180° con " << pizzas<< " pizzas" << endl;
@@ -62,9 +55,9 @@ int main (int argc, char** argv) {
     }
 
 	// espero a que terminen los hijos antes de liberar los recursos
-	for(int i=0; i < MACHINES; i++ ) {
-		wait(NULL);
-	}
+	amasador->shutDown();
+	cortadora->shutDown();
+    rallador->shutDown();
     semaforo.eliminar();
 	exit(OK);
 }

@@ -80,13 +80,31 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Amasador.cpp">
+			<Option target="pizza"/>
+		</Unit>
+		<Unit filename="/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Amasador.h">
+			<Option target="pizza"/>
+		</Unit>
 		<Unit filename="/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Constants.h">
+			<Option target="pizza"/>
+		</Unit>
+		<Unit filename="/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Cortadora.cpp">
+			<Option target="pizza"/>
+		</Unit>
+		<Unit filename="/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Cortadora.h">
 			<Option target="pizza"/>
 		</Unit>
 		<Unit filename="/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Machine.cpp">
 			<Option target="pizza"/>
 		</Unit>
 		<Unit filename="/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Machine.h">
+			<Option target="pizza"/>
+		</Unit>
+		<Unit filename="/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Rallador.cpp">
+			<Option target="pizza"/>
+		</Unit>
+		<Unit filename="/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Rallador.h">
 			<Option target="pizza"/>
 		</Unit>
 		<Unit filename="/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Semaforo.cpp">

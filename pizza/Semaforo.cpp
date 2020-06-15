@@ -4,7 +4,7 @@ Semaforo :: Semaforo( const std::string& nombre, const int cantidad,  const int 
 	key_t clave = ftok(nombre.c_str(), 'a');
 	this->id = semget (clave, cantidad, 0666 | IPC_CREAT );
     this->cantidad = cantidad;
-	this->inicializar ();
+	this->inicializar();
 }
 
 Semaforo::~Semaforo() {
@@ -44,6 +44,10 @@ int Semaforo::waitZero (const int id) const {
         std::cerr << "error en wait 0 en "<< id << std::strerror(errno) <<std::endl;
     }
     return resultado;
+}
+
+int Semaforo::debug (const int id) const {
+    return semctl(this->id, id, GETVAL);
 }
 
 int Semaforo::pWait(const int id) const {

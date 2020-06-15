@@ -6,23 +6,35 @@
 
 #IncludeRegexTransform: 
 
-/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Amasador.cpp
-Amasador.h
-/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Amasador.h
+/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Cocinero.cpp
+Cocinero.h
+/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Cocinero.h
 
-/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Amasador.h
+/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Cocinero.h
+unistd.h
+-
+Constants.h
+/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Constants.h
+Semaforo.h
+/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Semaforo.h
 Machine.h
 /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Machine.h
+Horno.h
+/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Horno.h
+MemoriaCompartida.h
+/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/MemoriaCompartida.h
 
 /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Constants.h
 
-/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Cortadora.cpp
-Cortadora.h
-/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Cortadora.h
-
-/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Cortadora.h
-Machine.h
-/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Machine.h
+/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Horno.h
+iostream
+-
+unistd.h
+-
+stdlib.h
+-
+sys/wait.h
+-
 
 /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Machine.h
 iostream
@@ -51,14 +63,6 @@ cerrno
 -
 iostream
 -
-
-/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Rallador.cpp
-Rallador.h
-/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Rallador.h
-
-/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Rallador.h
-Machine.h
-/Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Machine.h
 
 /Users/Jazmina/Documents/FIUBA/concurrentes/practica/ejercicios/pizza/Semaforo.h
 sys/ipc.h

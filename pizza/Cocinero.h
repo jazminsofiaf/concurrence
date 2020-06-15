@@ -12,7 +12,7 @@ class Cocinero {
 
 public:
     Cocinero();
-    void cocinar(int amount, Semaforo *semaforo, const int semaforo_previous_id);
+    void cocinar(int amount, Semaforo *sem_write, Semaforo *sem_read, const int rallador_write_id, const int cocinero_read_id);
     ~Cocinero();
 
 };

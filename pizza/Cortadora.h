@@ -5,10 +5,11 @@
 
 class Cortadora : public Machine {
 public:
-    Cortadora(int amount, Semaforo *semaforo, int semaforo_id , int previous_id);
+    Cortadora(int amount, Semaforo *semaforo_write, Semaforo *semaforo_read,
+            int amasador_write_id,  int cortadora_read_id ,int cortadora_write_id, int rallador_read_id);
     ~Cortadora();
 private:
-    void doTask() override;
+    void doTask(int index) override;
 };
 
 #endif //CORTADORA_H

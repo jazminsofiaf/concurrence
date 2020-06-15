@@ -20,8 +20,10 @@ protected:
     MemoriaCompartida<char> write_buffer;
     MemoriaCompartida<char> read_buffer;
     Machine();
-    void initMachine(int amount, Semaforo *semaforo, int semaforo_id , int previous_id);
-    virtual void doTask() = 0;
+    void initMachine(int amount, Semaforo *sem_write, Semaforo *sem_read,
+                    int previous_write, int read, int write , int next_read);
+
+    virtual void doTask(int index) = 0;
 
 public:
     void shutDown();

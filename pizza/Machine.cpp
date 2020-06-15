@@ -3,22 +3,24 @@ using namespace std;
 
 Machine::Machine():num(1){}
 
-void Machine::initMachine(int amount, Semaforo *semaforo,  int semaforo_id, int previous_id){
+void Machine::initMachine(int amount, Semaforo *sem_write, Semaforo *sem_read,
+                          int previous_write, int read, int write , int next_read){
     this->pid = fork();
-    if ( pid == CHILD_PID ) {
-        static const int SEMAFORO_K_VALUE = 2;
+    if ( pid == CHILD_PID ){
+        int index;
         for(int i=0; i < amount; i++ ) {
-            if(previous_id != NONE){
-                semaforo->pWait(previous_id);
-                doTask();
-                semaforo->pWait(previous_id);
-            } else {
-                doTask();
+            if(read != NONE){
+                sem_read->pWait(read); //espero a que haya algo para leer
             }
-            semaforo->vSignal(semaforo_id,SEMAFORO_K_VALUE);
-            semaforo->waitZero(semaforo_id);
+            sem_write->pWait(write);
+            index = i % MEM_SIZE;
+            doTask(index); //(quizas leo del buffer anterior) y escribo en mi buffer
+            if(previous_write != NONE) {
+                sem_write->vSignal(previous_write); //aviso que pueden seguir escribiendo en el buffer de lectura
+            }
+            sem_read->vSignal(next_read); //aviso que pueden leer del buffer en el que escribi
         }
-        cout << "(pid " << getpid() << "): termino"<< endl;
+        sem_read->waitZero(next_read); //antes de terminar espero que se hayan leido todos los datos del uktimo buffer
         exit(OK);
     }
 }

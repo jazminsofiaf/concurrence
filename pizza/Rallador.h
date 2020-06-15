@@ -7,11 +7,12 @@
 
 class Rallador : public Machine{
 public:
-    Rallador(int amount, Semaforo *semaforo, int semaforo_id, int previous_id);
+    Rallador(int amount, Semaforo *semaforo_write, Semaforo *semaforo_read,
+             int cortadora_write_id, int rallador_read_id, int rallador_write_id, int cocinero_read_id );
     ~Rallador();
 private:
-    void doTask() override ;
+    void doTask(int index) override ;
 };
 
 
-#endif //INC_06_SEMAFOROS_RALLADOR_H
+#endif //RALLADOR_H

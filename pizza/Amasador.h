@@ -6,10 +6,10 @@
 
 class Amasador : public Machine{
 public:
-    Amasador(int amount, Semaforo *semaforo, int semaforo_id);
+    Amasador(int amount, Semaforo *sem_write, Semaforo *sem_read, int write_id, int read_id);
     ~Amasador();
 private:
-    void doTask() override;
+    void doTask(int index) override;
 };
 
 
